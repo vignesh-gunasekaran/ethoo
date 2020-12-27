@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock Salt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,400;1,900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    height: 70px;
+    background-color:white;
+    
+    box-shadow: 0 6px 2px -2px gray;
+   
+}
+header .logo{
+    color:black;
+    margin-left: 50px;
+    line-height: 65px;
+    
+
+}
+header .logo h1{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro';
+    font-size: 200%;
+    
+}
+
+header .home-nav{
+    color: white;
+    float: right;
+    margin-right:20px ;
+    
+}
+
+
+.home-nav ul li{
+    display: inline;
+    line-height: 70px;
+    margin-right: 20px;
+    font-family: 'Source Code Pro', cursive;
+    
+
+}
+.home-nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    padding: 10px;
+    
+}
+.home-nav a:hover{
+     
+    background-color:#D3D3D3;
+    border-radius: 50px;
+     
+ }
+
+ .current a{
+    background-color:#D3D3D3;
+    border-radius: 50px;
+    padding: 10px;
+    
+ }
+ .image img{
+     position: absolute;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 650px;
+    overflow: hidden;
+    display: block;
+ }
+
+
+
+ .aboutme h1{
+     position: absolute;
+     display: block;
+     
+     font-size: 300%;
+     font-family: 'Source Sans Pro';
+     margin-top: 75px;
+     margin-left:40px;
+     text-shadow: 3px 3px #c4c4c4;
+
+}
+.aboutme p{
+    position: absolute;
+    display: block;
+    margin-top: 165px;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    font-size: 130%;
+    margin-left: 40px;
+    line-height: 40px;
+
+}

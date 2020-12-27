@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cancer.css') }}">
+    <link rel="stylesheet" href="./static/css/cancer.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MEDICURE</h1>
+        </div>
+        <nav class="home-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li class="current"><a href="{{ url_for('cancer') }}">Breast Cancer</a></li>
+                <li><a href="{{ url_for('liver') }}">Liver Diagnosis</a></li>
+                <li><a href="{{ url_for('heart') }}">Heart Issues</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="image">
+            <img src="./static/momandbaby.svg" >
+        </div>
+        <div class="form">
+            <form action="/cancer_predict" method="POST">
+                <div class="form-control">
+                    <h4>Concave Point Mean</h4>
+                    <input type="number" name="Concave Point Mean" placeholder=" eg: 0.1471" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Area Mean</h4>
+                    <input type="number" name="Area Mean" placeholder=" eg: 1001.0" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Radius Mean</h4>
+                    <input type="number" name="Radius Mean" placeholder= " eg: 17.99" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Perimeter Mean</h4>
+                    <input type="number" name="Perimeter Mean" placeholder=" eg: 122.80 " required step="any">  
+                </div>
+                <div class="form-control">
+                    <h4>Concavity Mean</h4>
+                    <input type="number" name="Concavity Mean" placeholder=" eg: 0.3001" required step="any">
+                </div>
+                <input type="submit" value="send" class="btn btn-primary">
+            </form>
+            {{pred}}
+            
+            </div>
+    </section>
+    
+    
+</body>
+</html>

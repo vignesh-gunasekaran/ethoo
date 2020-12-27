@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock Salt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    height: 70px;
+    background-color:white;
+    
+    box-shadow: 0 6px 2px -2px gray;
+   
+}
+header .logo{
+    color:black;
+    margin-left: 50px;
+    line-height: 65px;
+    
+
+}
+header .logo h1{
+    display: block;
+    position: absolute;
+    font-family: 'Source Code Pro';
+    font-size: 200%;
+    
+}
+
+header .home-nav{
+    color: white;
+    float: right;
+    margin-right:20px ;
+    
+}
+
+
+.home-nav ul li{
+    display: inline;
+    line-height: 70px;
+    margin-right: 20px;
+    font-family: 'Source Code Pro', cursive;
+    
+
+}
+.home-nav a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    padding: 10px;
+    
+}
+.home-nav a:hover{
+     
+    background-color:#D3D3D3;
+    border-radius: 50px;
+     
+ }
+
+ .current a{
+    background-color:#D3D3D3;
+    border-radius: 50px;
+    padding: 10px;
+    
+ }
+
+ /*section 2------------------------------------------------------------------------------------------------------------*/
+ .image img{
+    width: 100%;
+ }
+
+.form {
+    background-color: white;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    margin-left: 700px;
+    margin-top: -900px;
+    opacity: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.form .form-control{
+
+    margin: 30px 0;
+    margin-left: 110px;
+    font-size: 100%;
+}
+
+ .form .form-control h4{
+    font-family: 'Source Code Pro';
+ }
+
+ 
+ .form .form-control input{
+    border:0;
+    border-bottom:1px solid #b4becb;
+    
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Bangers';
+ }
+
+  /*remove arrow spinners*/
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+ 
+  input:focus{
+      outline: none;
+ 
+  }
+ 
+  input[type=submit]{
+      border: none;
+      color: black;
+      background-color: #63C3FF;
+      padding: 10px;
+      margin-left: 140px;
+      width: 100px;
+      border-radius: 10px;
+      opacity: 100%;
+      cursor: pointer;
+  }
+  }

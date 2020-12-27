@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="./static/css/home.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MEDICURE</h1>
+        </div>
+        <nav class="home-nav">
+            <ul>
+                <li class="current"><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('cancer') }}">Breast Cancer</a></li>
+                <li><a href="{{ url_for('liver') }}">Liver Diagnosis</a></li>
+                <li><a href="{{ url_for('heart') }}">Heart Issues</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class='intro'>
+        
+        <img src="./static/welcomecat.svg">
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/heart.css') }}">
+    <link rel="stylesheet" href="./static/css/heart.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MEDICURE</h1>
+        </div>
+        <nav class="home-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('cancer') }}">Breast Cancer</a></li>
+                <li><a href="{{ url_for('liver') }}">Liver Diagnosis</a></li>
+                <li class="current"><a href="{{ url_for('heart') }}">Heart Issues</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="image">
+            <img src="./static/childanddoctor_kw5l.svg" >
+        </div>
+        <div class="form">
+            <form>
+                <div class="form-control">
+                    <h4>Age</h4>
+                    <input type="number" name="Age" placeholder=" eg: 40" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Creatinine Phosphokinase</h4>
+                    <input type="number" name="Creatinine Phosphokinase" placeholder=" eg: 250" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Platelets</h4>
+                    <input type="number" name="Platelets" placeholder= " eg: 162000" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Serum Creatinine</h4>
+                    <input type="number" name="Serum Creatinine" placeholder=" eg: 1.5" required step="any">  
+                </div>
+                <div class="form-control">
+                    <h4>Serum Sodium</h4>
+                    <input type="number" name="Serum Sodium" placeholder=" eg: 130" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Sex</h4>
+                    <input type="number" name="Sex" placeholder=" eg: Male:1 , Female:0" required step="any">
+                </div>
+                <div class="form-control">
+                    <h4>Smoking</h4>
+                    <input type="number" name="Smoking" placeholder="Non-Smoke:0 , Smokers:1" required step="any">
+                </div>
+                <input type="submit" value="send" class="btn btn-primary">
+            </form>
+            </div>
+    </section>
+    
+</body>
+</html>

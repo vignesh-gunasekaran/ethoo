@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutme.css') }}">
+    <link rel="stylesheet" href="./static/css/aboutme.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MEDICURE</h1>
+        </div>
+        <nav class="home-nav">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('cancer') }}">Breast Cancer</a></li>
+                <li><a href="{{ url_for('liver') }}">Liver Diagnosis</a></li>
+                <li><a href="{{ url_for('heart') }}">Heart Issues</a></li>
+                <li class="current"><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="image">
+            <img src="./static/finalme.svg" >
+        </div>
+        
+        <div class="aboutme">
+            <h1>VIGNESH GUNASEKARAN</h1>
+            <p>I'm basically a ambivertic guy. I usually visualize more about data.<br> When some a talk about some Calculation, i would be first person to <br> pick a pen and paper to calculate the net-result, net-worth. Actually<br> I'm too eager to get know the result about a Data. Hence thats leads me<br>to aspire DATASCIENCE 
+            </p>
+
+        </div>
+    </section>
+    
+
+</body>
+</html>
